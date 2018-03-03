@@ -1,0 +1,36 @@
+.frame
+{
+	width:100%;
+	border:1px solid blue;
+	height: 0.5rem;
+}
+
+.bar
+{
+	width:0%;
+	background-color: red;
+	height:10px;
+}
+.bar_full
+{
+	width:100%;
+	background-color: red;
+	height:10px;
+	transition:width 10s ease-in-out;
+
+
+}
+/*.frame
+{
+	width:100%;
+	border:1px solid blue;
+	height: 0.5rem;
+	transition:1s;
+	background-color:black;
+
+}
+
+.frame:hover
+{
+	transform: translate3d(110px, 110px, 1100px);
+}*/

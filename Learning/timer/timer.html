@@ -1,0 +1,80 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title></title>
+	<style>
+		
+		div
+		{
+			width:100px;
+			height:100px;
+			border:1px red solid;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	<table>
+		<tbody></tbody>
+	</table>
+
+<script type="text/javascript">
+		function TimerTest()
+		{
+			var that = this;
+
+			this.run=function()
+			{
+
+			
+				    var div = document.getElementsByTagName('div')[0];
+				    for(var i=0;i<6;i++) {
+				    	 setTimeout(function(i){
+			            	var colors=['orange','yellow','black','blue','pink','red'];
+			                div.style.backgroundColor = colors[i];
+			                },i*2000,i   
+				    	);
+				    }
+			}
+		}
+	
+	  document.onreadystatechange = function(){
+        if(document.readyState == "complete"){
+        	//var runner = new TimerTest();
+        	//runner.run();
+
+        /*	let i =0xA00000;
+       
+        	function run2()
+        	{
+        		if(i<0xBBBBBB)
+        		{
+        			setTimeout(run2,0);
+        		}
+        		var div = document.getElementsByTagName('div')[0];
+    			//var colors=['orange','yellow','black','blue','pink','red'];
+		        div.style.backgroundColor = '#'+i.toString(16);
+		       	i++;
+
+        	}
+
+        	run2();*/
+        	(function run3() {
+			    var div = document.getElementsByTagName('div')[0]
+			    for(var i=0xA00000;i<0xBBBBBB;i++) {
+			        (function (color) {
+			            setTimeout(function () {
+			                div.style.backgroundColor = '#' + color.toString(16);    
+			            });
+			        })(i);
+			    }
+			})()；
+			/*run2 和run3 的区别 run3还是要等到执行了所用的function（color）后再开始渲染，而run2，是每变一次颜色再就渲染一次*/
+
+        }
+    }
+
+
+</script>
+</body>
+</html>

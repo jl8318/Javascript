@@ -1,0 +1,18 @@
+./node_modules/.bin/webpack -d --display-error-details
+
+
+
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.9",
+    "react": "^16.2.0",
+    "react-autosuggest": "^9.3.2",
+    "react-dom": "^16.2.0",
+    "style-loader": "^0.19.1",
+    "webpack": "^3.10.0"
+
+
+    npm install babel-core babel-loader babel-preset-env babel-preset-react babel-preset-stage-0 react react-dom css-loader style-loader webpack --save

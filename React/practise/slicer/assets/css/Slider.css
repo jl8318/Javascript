@@ -1,0 +1,110 @@
+.frame
+{
+	max-height:800px;
+	width:100%;
+	position:relative;
+}
+.picture_frame
+{
+	height:100%;
+	width:100%;
+}
+.picture
+{
+	height:100%;
+	width:100%;
+}
+
+.leftSign,
+.rightSign
+{
+	min-width:70px;
+	height:70px;
+	background-color: #000;
+	opacity:1;
+	line-height: 70px;
+	border-radius:35px;
+	position:absolute;
+	overflow: hidden;
+	background-color:rgba(0,0,0,0.5);
+}
+
+
+
+.leftBtnFrame:hover,
+.rightBtnFrame:hover
+{
+	width:220px;
+	cursor: pointer;
+}
+
+.leftSign:before
+{
+	height:100%;
+	content:'';
+	display:inline-block;
+	vertical-align: middle;
+}
+.leftSign i,
+.rightSign i
+{
+	color:white;
+	opacity: 1;
+	font-size:36px;
+	font-weight: 200;
+	vertical-align: middle;
+	display:inline-block;
+	position:relative;
+}
+.leftSign
+{
+
+	top:50%;
+	left:0px;
+	transform: matrix(1, 0, 0, 1, 10, -35);
+	-webkit-transform: matrix(1, 0, 0, 1, 10, -35);
+  	-moz-transform:    matrix(1, 0, 0, 1, 10, -35);
+  	-ms-transform:     matrix(1, 0, 0, 1, 10, -35);
+}
+.leftSign i
+{
+	margin-left: 15px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+    user-select: none;
+}
+
+.rightSign i
+{
+	margin-right:15px;
+}
+
+.rightSign
+{
+	top:50%;
+	transform: matrix(1, 0, 0, 1, -10, -35);
+    right: 0%;
+	-webkit-transform: matrix(1, 0, 0, 1, -10, -35);
+  	-moz-transform:    matrix(1, 0, 0, 1, -10, -35);
+  	-ms-transform:     matrix(1, 0, 0, 1, -10, -35);
+  	direction: rtl;
+}
+
+.leftBtnFrame,
+.rightBtnFrame
+{
+	position:relative;
+	display: inline-block;
+	width:100%;
+}
+.leftBtnFrame
+{
+	left:0px;
+}
+.rightBtnFrame
+{
+	right:0px;
+}
